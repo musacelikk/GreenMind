@@ -24,7 +24,7 @@ export default function Navbar({ variant = "fixed" }) {
       <div className={containerClasses}>
         <div className={innerClasses}>
           {/* Logo and Brand Name */}
-          <Link href="/web" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/l.png"
               alt="GreenMind"
@@ -41,19 +41,19 @@ export default function Navbar({ variant = "fixed" }) {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
             <Link
-              href="/web/urunler"
+              href="/urunler"
               className="text-white hover:text-gray-300 transition text-base font-medium"
             >
               Ürünler
             </Link>
             <Link
-              href="/web/destek"
+              href="/destek"
               className="text-white hover:text-gray-300 transition text-base font-medium"
             >
               Destek
             </Link>
             <Link
-              href="/web/iletisim"
+              href="/iletisim"
               className="text-white hover:text-gray-300 transition text-base font-medium"
             >
               İletişim
@@ -85,7 +85,7 @@ export default function Navbar({ variant = "fixed" }) {
         {isMenuOpen && (
           <div className={`${variant === "transparent" ? "md:hidden mt-4 pb-4" : "md:hidden pb-4 space-y-2"}`}>
             <Link
-              href="/web/urunler"
+              href="/urunler"
               className={variant === "transparent" 
                 ? "block text-white py-2 hover:text-gray-300 transition"
                 : "block px-3 py-2 text-white hover:bg-white/10 rounded transition"
@@ -95,7 +95,7 @@ export default function Navbar({ variant = "fixed" }) {
               Ürünler
             </Link>
             <Link
-              href="/web/destek"
+              href="/destek"
               className={variant === "transparent" 
                 ? "block text-white py-2 hover:text-gray-300 transition"
                 : "block px-3 py-2 text-white hover:bg-white/10 rounded transition"
@@ -105,7 +105,7 @@ export default function Navbar({ variant = "fixed" }) {
               Destek
             </Link>
             <Link
-              href="/web/iletisim"
+              href="/iletisim"
               className={variant === "transparent" 
                 ? "block text-white py-2 hover:text-gray-300 transition"
                 : "block px-3 py-2 text-white hover:bg-white/10 rounded transition"
