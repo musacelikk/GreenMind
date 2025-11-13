@@ -10,7 +10,7 @@ export default function WebPage() {
 
   return (
     <div className="relative min-h-screen overflow-hidden page-transition">
-      {/* First Image Section */}
+
       <section className="relative w-full min-h-screen overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
@@ -23,7 +23,7 @@ export default function WebPage() {
         </div>
         <div className="absolute inset-0 bg-black/50 z-10"></div>
 
-        {/* Navbar */}
+
         <Navbar variant="fixed" />
 
         {/* Main Content */}
